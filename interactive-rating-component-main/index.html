@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="assest/style/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="dark-space">
+    <div class="box">
+      <div class="star">
+        <img class="str-img" src="assest/images/icon-star.svg" alt="star">
+        <button id="swicher-clr"><i class="	fas fa-sun"></i></button>
+      </div>
+      <div class="text">
+        <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+      <div class="score">
+        <ul>
+          <li><button class="btn">1</button></li>
+          <li><button class="btn">2</button></li>
+          <li><button class="btn">3</button></li>
+          <li><button class="btn">4</button></li>
+          <li><button class="btn">5</button></li>
+        </ul>
+      </div>
+      <div class="submit">
+        <button type="submit" id="submitScore">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+  <!-- ========THANX=> -->
+ 
+    <div class="container hide">
+      <div class="box">
+        <img src="assest/images/illustration-thank-you.svg" alt="thanx">
+        <div class="yourScore">
+          <p>you selected
+            <span id="rating"></span>
+            out of 5</p>
+        </div>
+        <div class="text">
+          <h2>Thank you!</h2>
+          <p>We appreciate you taking the time to give a rating.If you ever need more support , dont hesitate to get in touch!</p>
+        </div>
+      </div>
+    </div>
+
+
+  
+
+ 
+
+    <script src="https://kit.fontawesome.com/d07e1f4aae.js" crossorigin="anonymous"></script>
+  <script src="assest/javascript/app.js"></script>
+</body>
+</html>

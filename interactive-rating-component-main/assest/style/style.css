@@ -1,0 +1,212 @@
+:root{
+  --space-clr:hsl(216deg, 12%, 8%);
+  --box-bg-clr:#1b222c;
+  --bg-ele-gray: #262f38;
+  --white-clr:#fff;
+  --orange-:#fb7413;
+  --text-clr:hsl(217deg, 12%, 63%);
+}
+body.light-mode{
+  --space-clr:hsl(0, 0%, 100%);
+  --box-bg-clr:#efe3d0;
+  --bg-ele-gray: #ffffff;
+  --white-clr:#333333;
+  --orange-:hsl(25deg, 97%, 53%);
+  --text-clr:hsl(0, 0%, 0%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--space-clr);
+  font-family: "overpass";
+  transition: 1s ,ease;
+  font-size: 15px;
+}
+body .dark-space {
+  display: flex;
+  justify-content: center;
+  /* width: 10vw; */
+}
+body .dark-space .box {
+  background-color:var(--box-bg-clr);
+  transition: 1s ease;
+  /* width: 26rem; */
+  /* max-width: 33%; */
+  max-width: 26rem;
+  margin-top: 20vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+body .dark-space .box .star {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+body .dark-space .box .star .str-img {
+  background-color: var(--bg-ele-gray);
+  padding: 1rem;
+  width: 2.898rem;
+  border-radius: 50%;
+}
+body .dark-space .box .star i{
+  background-color: var(--bg-ele-gray);
+  padding: 1rem;
+  border-radius: 50%;
+  
+}
+body .dark-space .box .star i::before{
+  color: var(--orange-);
+  width: 1rem;
+}
+
+/* .icons i,
+.icons svg {
+   color: #2759AE;
+} */
+
+body .dark-space .box .star button{
+      background-color: #7fffd400;
+      border-radius: 103%;
+      border: none;
+      margin-right: 2rem;
+      cursor: pointer;
+}
+
+body .dark-space .box .star button img{
+  max-width: 100%;
+  width: 3rem;
+  border-radius: 50%;
+}
+body .dark-space .box .text {
+  padding-inline: 2rem;
+  max-width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .dark-space .box .text h2 {
+  color: var(--white-clr);
+}
+body .dark-space .box .text p {
+  color: var(--text-clr);
+  line-height: 1.654rem;
+  margin-bottom: 1rem;
+}
+body .dark-space .box .score {
+  margin-block: 2rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.141);
+}
+body .dark-space .box .score ul {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+body .dark-space .box .score ul li {
+  list-style-type: none;
+
+}
+body .dark-space .box .score ul li button {
+  /* text-decoration: none; */
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.141);
+  color: var(--text-clr);
+  background-color:var(--bg-ele-gray);
+  padding: 1rem 1.35rem;
+  border-radius: 100%;
+  transition:0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+body .dark-space .box .score ul li button:hover {
+  background-color: var(--orange-);
+  color: var(--white-clr);
+}
+body .dark-space .box .score ul li button:focus{
+  background-color:hsl(217, 12%, 63%);
+  color: var(--white-clr);
+}
+body .dark-space .box .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  
+}
+body .dark-space .box .submit button {
+  /* padding: 0.75rem 9.5rem; */
+  width: 100%;
+  padding: 0.75rem 0rem;
+  margin-inline: 1rem;
+  background-color: var(--orange-);
+  border-radius: 20px;
+  border: none;
+  color: var(--white-clr);
+  cursor: pointer;
+  font-family: "overpass";
+  letter-spacing: 0.189rem;
+  transition: 0.3s ease;
+}
+
+body .dark-space .box .submit button:hover{
+background-color: var(--white-clr);
+color:var(--orange-) ;
+}
+
+/* //hide */
+body .hide{
+  display: none;
+}
+
+.container{
+      display: flex;
+      justify-content: center;
+}
+body .container .box{
+    background-color:var(--box-bg-clr);
+  /* width: 26rem; */
+  /* max-width: 33%; */
+  max-width: 26rem;
+  margin-top: 20vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+body .container .box img{
+  max-width: 100%;
+  display: block;
+  margin: 1.5rem auto;
+}
+body .container .box .yourScore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .box .yourScore p{
+  color: var(--orange-);
+  font-size: 0.9rem;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--bg-ele-gray);
+}
+body .container .box .text {
+  text-align: center;
+}
+body .container .box .text h2{
+  color: var(--white-clr);
+  margin-top: 1rem;
+}
+body .container .box .text p{
+  color: var(--text-clr);
+  line-height: 1.654rem;
+  /* margin-bottom: 1rem; */
+  margin: 1rem 2.25rem 1.5rem;
+}
